@@ -23,10 +23,10 @@ public class Main {
             int nodeNum = 0;
             System.out.print("\nCombien de Nodes voulez vous sur le Reseau ? ");
             try {
-                nodeNum = Integer.parseInt(sc.nextLine()); //this is what will throw an exception if one is thrown
+                nodeNum = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {
                 inputInvalid = true;
-                nodeNum = -1; //default value used in finally block
+                nodeNum = -1;
             } finally {
                 if (nodeNum < 1 || inputInvalid) {
                     System.out.println("""
@@ -49,7 +49,7 @@ public class Main {
             int minerNum = 0;
             System.out.print("\nCombien de Mineurs voulez vous sur le Reseau ? ");
             try {
-                minerNum = Integer.parseInt(sc.nextLine()); //this is what will throw an exception if one is thrown
+                minerNum = Integer.parseInt(sc.nextLine());
             } catch (Exception e) {
                 inputInvalid = true;
                 minerNum = -1;
