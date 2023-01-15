@@ -113,7 +113,7 @@ public class Reseau {
     private boolean nodeConsensus(Block newlyMinedBlock) {
         boolean result = true;
         this.initNodes(newlyMinedBlock);
-        Blockchain previousChain = this.nodes.get(0).getProposedBlockchain(); //assumes there is at least 1 node in the Reseau
+        Blockchain previousChain = this.nodes.get(0).getProposedBlockchain();
         System.out.println("Starting Node Consensus protocol...");
 
         for (int i = 0; i < this.nodes.size(); i++) {
